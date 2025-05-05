@@ -3,91 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Brandly | Reignite Your Brand</title>
+  <title>Brandly | Ignite Your Brand</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="scripts.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@600&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="dark-mode-toggle">
-    <button id="darkToggle">Toggle Dark Mode</button>
-  </div>
-
   <header class="hero">
-    <div class="hero-bg-fire"></div>
     <div class="hero-content">
-      <img src="logo.png" alt="Brandly Phoenix Logo" class="logo phoenix-glow"/>
-      <h1 class="hero-title scroll-reveal">Reignite Your Brand</h1>
-      <p class="hero-subtitle scroll-reveal">Bold identities. Local legends. Built with fire.</p>
-      <div class="cta-buttons scroll-reveal">
+      <img src="logo.png" alt="Brandly Logo" class="logo" />
+      <h1 class="hero-title">Reignite Your Brand</h1>
+      <p class="hero-subtitle">Bold identities. Local legends. Built with fire.</p>
+      <div class="cta-buttons">
         <a href="#work" class="btn primary">Explore Our Work</a>
         <a href="#contact" class="btn secondary">Let's Talk</a>
       </div>
     </div>
   </header>
 
-  <section class="services section">
+  <section class="services" id="services">
     <h2>What We Do</h2>
     <div class="service-cards">
-      <div class="card">Logo Design</div>
-      <div class="card">Branding Packages</div>
-      <div class="card">Web & Mobile Design</div>
-      <div class="card">Social Media Kits</div>
+      <div class="card"><img src="branding.png"><p>Branding Packages</p></div>
+      <div class="card"><img src="webdesign.png"><p>Web & Mobile Design</p></div>
+      <div class="card"><img src="logo-design.png"><p>Logo Design</p></div>
+      <div class="card"><img src="socialmedia.png"><p>Social Media Kits</p></div>
     </div>
   </section>
 
-  <section class="work section" id="work">
+  <section class="work" id="work">
     <h2>Before & After</h2>
     <div class="work-grid">
-      <div class="work-item">
-        <img src="https://via.placeholder.com/300x150?text=Before+Bakery" alt="Before bakery logo">
-        <p>Before</p>
-      </div>
-      <div class="work-item">
-        <img src="https://via.placeholder.com/300x150?text=After+Bakery" alt="After bakery logo">
-        <p>After</p>
-      </div>
-      <div class="work-item">
-        <img src="https://via.placeholder.com/300x150?text=Before+Cafe" alt="Before cafe logo">
-        <p>Before</p>
-      </div>
-      <div class="work-item">
-        <img src="https://via.placeholder.com/300x150?text=After+Cafe" alt="After cafe logo">
-        <p>After</p>
-      </div>
+      <div><p>Before</p><img src="before.png" alt="Before Example" /></div>
+      <div><p>After</p><img src="after.png" alt="After Example" /></div>
     </div>
   </section>
 
-  <section class="why section">
+  <section class="why">
     <h2>Why Brandly?</h2>
-    <ul class="why-list">
-      <li>Local expertise + modern creativity</li>
-      <li>Designs that convert and connect</li>
-      <li>Tailored branding packages</li>
-      <li>Fast turnarounds, bold results</li>
-    </ul>
+    <div class="why-grid">
+      <div class="why-item">Local expertise + modern creativity</div>
+      <div class="why-item">Designs that convert and connect</div>
+      <div class="why-item">Tailored branding packages</div>
+      <div class="why-item">Fast turnarounds, bold results</div>
+    </div>
   </section>
 
-  <section class="testimonials section">
-    <h2>Client Love</h2>
-    <blockquote>"Our rebrand got us noticed overnight! Brandly made us look legendary."</blockquote>
-    <blockquote>"A total transformation. We’ve never looked more professional or on-trend."</blockquote>
-  </section>
-
-  <section class="contact section" id="contact">
+  <section class="contact" id="contact">
     <h2>Let's Create Together</h2>
     <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Tell us about your project..." required></textarea>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
-    <div class="confirmation" style="display:none;">Thanks! We'll be in touch soon.</div>
   </section>
 
   <footer class="footer">
-    <div class="footer-content">
+    <div class="footer-links">
       <a href="#about">About</a>
       <a href="mailto:hello@brandly.com">Email</a>
       <a href="https://instagram.com/yourbrand" target="_blank">Instagram</a>
