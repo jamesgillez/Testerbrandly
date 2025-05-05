@@ -1,5 +1,5 @@
 
 document.querySelector('.contact-form').addEventListener('submit', function(e) {
   e.preventDefault();
-  alert("Thank you for contacting Brandly!");
+  alert("Thanks for your message! We'll be in touch.");
 });
