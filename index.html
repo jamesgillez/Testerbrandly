@@ -1,1 +1,76 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Brandly</title><link rel='stylesheet' href='styles.css'><script src='scripts.js' defer></script><link rel='icon' href='favicon.png'></head><body><img src='logo.png' alt='Logo'><h1>Working Site</h1></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brandly | Creative Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <script src="scripts.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@600&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <img src="logo.png" alt="Brandly Logo" class="logo" />
+    <div class="hero-content">
+      <h1>We Help Small Businesses Rebrand</h1>
+      <p>Logos, branding, websites, and more.</p>
+      <div class="buttons">
+        <a href="#contact" class="btn primary">Get Started</a>
+        <a href="#portfolio" class="btn secondary">View Our Work</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="portfolio" class="portfolio">
+    <h2>Before & After</h2>
+    <div class="carousel">
+      <div class="carousel-inner">
+        <img src="before-after1.png" alt="Bakery Example" />
+        <img src="before-after2.png" alt="Salon Example" />
+        <img src="before-after3.png" alt="Cafe Example" />
+        <img src="before-after4.png" alt="Nightclub Example" />
+        <img src="before-after5.png" alt="Fried Chicken Example" />
+      </div>
+      <button class="carousel-btn prev">&#10094;</button>
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>What We Do</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <img src="icon-logo.png" alt="Logo Design" />
+        <h3>Logo Design</h3>
+        <p>Memorable logos that define your business.</p>
+      </div>
+      <div class="service-card">
+        <img src="icon-branding.png" alt="Branding" />
+        <h3>Branding</h3>
+        <p>Build cohesive identities that stand out.</p>
+      </div>
+      <div class="service-card">
+        <img src="icon-web.png" alt="Websites" />
+        <h3>Websites</h3>
+        <p>Stylish, modern, and responsive websites.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Let's Create Together</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Brandly. All rights reserved.</p>
+  </footer>
+</body>
+</html>

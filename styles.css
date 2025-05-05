@@ -1,1 +1,116 @@
-body { font-family: sans-serif; background: #fff; color: #111; padding: 2rem; text-align: center; } img { width: 120px; }
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+}
+.hero {
+  background: linear-gradient(135deg, #ff8800, #ff4d00);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.logo {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+.hero h1 {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+.buttons {
+  margin-top: 1.5rem;
+}
+.btn {
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.btn.primary {
+  background: #fff;
+  color: #ff4d00;
+}
+.btn.secondary {
+  background: #ffe066;
+  color: #111;
+}
+.portfolio, .services, .contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 700px;
+  margin: auto;
+}
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.carousel-inner img {
+  width: 100%;
+  flex: 0 0 100%;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ff4d00;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+.service-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.service-card {
+  background: #fff3e0;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 300px;
+}
+.service-card img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+.contact-form input, .contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact-form button {
+  background: #ff4d00;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
