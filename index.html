@@ -2,77 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brandly | Ignite Your Brand</title>
-  <link rel="icon" type="image/x-icon" href="favicon_symbol.ico" />
-  <link href="styles.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brandly | Reignite Your Brand</title>
+  <link rel="stylesheet" href="styles.css" />
   <script defer src="scripts.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@600&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="dark-mode-toggle">
+    <button id="darkToggle">Toggle Dark Mode</button>
+  </div>
+
   <header class="hero">
-    <img src="FCB9EB07-1AB8-4FCB-815F-B321620F3FA6.png" alt="Brandly Logo" class="logo" />
-    <h1>Ignite Your Brand.<br />Stand Out Locally.</h1>
-    <p>We transform small business brands into bold, unforgettable identities.</p>
-    <div class="cta-buttons">
-      <a href="#work" class="btn primary">See Our Work</a>
-      <a href="#contact" class="btn">Get a Free Review</a>
+    <div class="hero-bg-fire"></div>
+    <div class="hero-content">
+      <img src="logo.png" alt="Brandly Phoenix Logo" class="logo phoenix-glow"/>
+      <h1 class="hero-title scroll-reveal">Reignite Your Brand</h1>
+      <p class="hero-subtitle scroll-reveal">Bold identities. Local legends. Built with fire.</p>
+      <div class="cta-buttons scroll-reveal">
+        <a href="#work" class="btn primary">Explore Our Work</a>
+        <a href="#contact" class="btn secondary">Let's Talk</a>
+      </div>
     </div>
   </header>
 
-  <section class="services" id="services">
+  <section class="services section">
     <h2>What We Do</h2>
-    <div class="cards">
+    <div class="service-cards">
       <div class="card">Logo Design</div>
       <div class="card">Branding Packages</div>
-      <div class="card">Web Design</div>
+      <div class="card">Web & Mobile Design</div>
       <div class="card">Social Media Kits</div>
     </div>
   </section>
 
-  <section class="work" id="work">
-    <h2>Work Showcase</h2>
-    <div class="before-after">
-      <div><p>Before</p><img src="https://via.placeholder.com/200x100?text=Before+Logo" alt="Before" /></div>
-      <div><p>After</p><img src="https://via.placeholder.com/200x100?text=After+Logo" alt="After" /></div>
+  <section class="work section" id="work">
+    <h2>Before & After</h2>
+    <div class="work-grid">
+      <div class="work-item">
+        <img src="https://via.placeholder.com/300x150?text=Before+Bakery" alt="Before bakery logo">
+        <p>Before</p>
+      </div>
+      <div class="work-item">
+        <img src="https://via.placeholder.com/300x150?text=After+Bakery" alt="After bakery logo">
+        <p>After</p>
+      </div>
+      <div class="work-item">
+        <img src="https://via.placeholder.com/300x150?text=Before+Cafe" alt="Before cafe logo">
+        <p>Before</p>
+      </div>
+      <div class="work-item">
+        <img src="https://via.placeholder.com/300x150?text=After+Cafe" alt="After cafe logo">
+        <p>After</p>
+      </div>
     </div>
   </section>
 
-  <section class="why">
-    <h2>Why Choose Brandly</h2>
-    <ul>
-      <li>Local Expertise</li>
-      <li>Bold, Creative Identity</li>
-      <li>Fast Turnaround</li>
-      <li>Small Studio, Big Results</li>
+  <section class="why section">
+    <h2>Why Brandly?</h2>
+    <ul class="why-list">
+      <li>Local expertise + modern creativity</li>
+      <li>Designs that convert and connect</li>
+      <li>Tailored branding packages</li>
+      <li>Fast turnarounds, bold results</li>
     </ul>
   </section>
 
-  <section class="testimonials">
-    <h2>What Clients Say</h2>
-    <blockquote>"Our rebrand got us noticed overnight! Brandly is magic."</blockquote>
-    <blockquote>"The team nailed our voice and look in a week. Impressed!"</blockquote>
+  <section class="testimonials section">
+    <h2>Client Love</h2>
+    <blockquote>"Our rebrand got us noticed overnight! Brandly made us look legendary."</blockquote>
+    <blockquote>"A total transformation. We’ve never looked more professional or on-trend."</blockquote>
   </section>
 
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
+  <section class="contact section" id="contact">
+    <h2>Let's Create Together</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Tell us about your project..." required></textarea>
       <button type="submit">Send Message</button>
     </form>
+    <div class="confirmation" style="display:none;">Thanks! We'll be in touch soon.</div>
   </section>
 
-  <footer>
-    <div class="footer-links">
+  <footer class="footer">
+    <div class="footer-content">
       <a href="#about">About</a>
-      <a href="mailto:hello@brandly.com">Email Us</a>
+      <a href="mailto:hello@brandly.com">Email</a>
       <a href="https://instagram.com/yourbrand" target="_blank">Instagram</a>
     </div>
   </footer>
 
   <div class="newsletter">
-    <h3>Subscribe to our Newsletter</h3>
+    <h3>Subscribe to Our Newsletter</h3>
     <input type="email" placeholder="you@example.com" />
     <button>Subscribe</button>
   </div>

@@ -1,5 +1,4 @@
-document.addEventListener('keydown', e => {
-  if (e.key.toLowerCase() === 'd') {
-    document.body.classList.toggle('dark-mode');
-  }
+
+document.getElementById('darkToggle').addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
 });

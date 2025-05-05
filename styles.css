@@ -1,128 +1,83 @@
-:root {
-  --red: #b63529;
-  --orange: #f26c2d;
-  --yellow: #f9a825;
-  --bg: #fdf8f4;
-  --text: #222;
-  --dark-bg: #1a1a1a;
-  --dark-text: #eee;
-}
+
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   margin: 0;
-  background-color: var(--bg);
-  color: var(--text);
-  transition: background 0.3s, color 0.3s;
-}
-.dark-mode {
-  background-color: var(--dark-bg);
-  color: var(--dark-text);
-}
-header.hero {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(145deg, var(--red), var(--orange), var(--yellow));
+  background: linear-gradient(145deg, #1a1a1a, #330000);
   color: white;
-  animation: fadeIn 1s ease-in;
+}
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: radial-gradient(circle, #ff4500, #330000);
+  position: relative;
+}
+.hero-bg-fire {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif') center/cover no-repeat;
+  opacity: 0.1;
+  z-index: 0;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 .logo {
-  height: 80px;
-  margin-bottom: 1rem;
+  max-width: 120px;
+  animation: glow 3s infinite ease-in-out;
 }
-.cta-buttons .btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  margin: 0.5rem;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.3s;
+@keyframes glow {
+  0%, 100% { filter: drop-shadow(0 0 0px orange); }
+  50% { filter: drop-shadow(0 0 12px orange); }
 }
-.btn.primary {
-  background: var(--yellow);
-  color: black;
+h1, h2 {
+  font-family: 'Clash Display', sans-serif;
 }
-.btn:hover {
-  background: var(--red);
-  color: white;
-}
-section {
-  padding: 3rem 2rem;
+.section {
+  padding: 4rem 2rem;
   text-align: center;
-  animation: fadeInUp 1s ease-in-out;
-}
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
 }
 .card {
-  background: var(--orange);
-  color: white;
-  padding: 2rem;
-  border-radius: 8px;
-  width: 200px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background: rgba(255, 69, 0, 0.2);
+  border: 1px solid orange;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 12px;
+  transition: transform 0.3s;
 }
-.before-after {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+.card:hover {
+  transform: translateY(-5px);
 }
-.testimonials blockquote {
-  font-style: italic;
-  max-width: 600px;
-  margin: 1rem auto;
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 400px;
-  margin: auto;
-}
-input, textarea {
-  padding: 0.75rem;
-  border: 1px solid #ccc;
+.btn {
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
   border-radius: 5px;
-}
-button {
-  padding: 0.75rem;
-  background: var(--red);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-}
-footer {
-  background: #111;
-  color: white;
-  padding: 2rem;
-  text-align: center;
-}
-.footer-links a {
-  margin: 0 1rem;
-  color: var(--yellow);
   text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.btn.primary {
+  background-color: #f85a3e;
+}
+.btn.secondary {
+  background-color: #ffb347;
+  color: black;
+}
+.footer {
+  background: #111;
+  padding: 2rem;
 }
 .newsletter {
-  background: var(--orange);
-  color: white;
-  padding: 2rem;
+  background: #330000;
   text-align: center;
+  padding: 2rem;
 }
-.newsletter input {
-  padding: 0.5rem;
-  margin-right: 0.5rem;
-}
-@keyframes fadeIn {
-  from { opacity: 0 }
-  to { opacity: 1 }
-}
-@keyframes fadeInUp {
-  from { transform: translateY(20px); opacity: 0 }
-  to { transform: translateY(0); opacity: 1 }
+.dark-mode {
+  background-color: #111 !important;
+  color: #eee !important;
 }
